@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">startandroid5and6</string>
+    <string name="name_text">Вводим числа:</string>
+    <string name="screen_text">123456789</string>
+    <string name="one_text">1</string>
+    <string name="two_text">2</string>
+    <string name="three_text">3</string>
+    <string name="four_text">4</string>
+    <string name="five_text">5</string>
+    <string name="six_text">6</string>
+    <string name="seven_text">7</string>
+    <string name="eight_text">8</string>
+    <string name="nine_text">9</string>
+    <string name="secret">Секрет</string>
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/name_text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/one_elem"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/screen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/screen_text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/four_elem"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <Button
+            android:id="@+id/one_elem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/one_text"
+            app:layout_constraintRight_toLeftOf="@+id/two_elem"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/two_elem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/two_text"
+            app:layout_constraintRight_toLeftOf="@+id/three_elem"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/three_elem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/three_text"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/four_elem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/four_text"
+            app:layout_constraintRight_toLeftOf="@+id/five_elem"
+            app:layout_constraintTop_toBottomOf="@+id/one_elem" />
+
+        <Button
+            android:id="@+id/five_elem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/five_text"
+            app:layout_constraintRight_toLeftOf="@+id/six_elem"
+            app:layout_constraintTop_toBottomOf="@+id/two_elem" />
+
+        <Button
+            android:id="@+id/six_elem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/six_text"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/three_elem" />
+
+        <Button
+            android:id="@+id/seven_elem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/seven_text"
+            app:layout_constraintRight_toLeftOf="@+id/eight_elem"
+            app:layout_constraintTop_toBottomOf="@+id/four_elem" />
+
+        <Button
+            android:id="@+id/eight_elem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/eight_text"
+            app:layout_constraintRight_toLeftOf="@+id/nine_elem"
+            app:layout_constraintTop_toBottomOf="@+id/five_elem" />
+
+        <Button
+            android:id="@+id/nine_elem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/nine_text"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/six_elem" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <Button
+            android:id="@+id/secret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/secret"
+            android:visibility="visible" />
+    </FrameLayout>
+</FrameLayout>
