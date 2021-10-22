@@ -2,11 +2,11 @@ package com.example.startandroid5and6;
 
 import android.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatEditText;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.FrameLayout;
-import android.widget.TableLayout;
 import android.widget.Toast;
 
 import com.google.android.material.button.MaterialButton;
@@ -38,9 +38,9 @@ public class MainActivity extends AppCompatActivity {
         );
 
         MaterialButton snackbar = findViewById(R.id.btn_snackbar);
-        TableLayout table = findViewById(R.id.table);
+        AppCompatEditText screen = findViewById(R.id.screen);
         snackbar.setOnClickListener(v ->
-                Snackbar.make(table,R.string.snackbar_text, BaseTransientBottomBar.LENGTH_LONG).show()
+                Snackbar.make(screen, R.string.snackbar_text, BaseTransientBottomBar.LENGTH_LONG).show()
         );
 
         MaterialButton dialogButton = findViewById(R.id.btn_dialog);
