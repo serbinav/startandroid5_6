@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -19,7 +19,7 @@
             app:layout_constraintRight_toLeftOf="@+id/one_elem"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/screen"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
             app:layout_constraintRight_toLeftOf="@+id/four_elem"
             app:layout_constraintTop_toBottomOf="@+id/name" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/one_elem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
             app:layout_constraintRight_toLeftOf="@+id/two_elem"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/two_elem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
             app:layout_constraintRight_toLeftOf="@+id/three_elem"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/three_elem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/four_elem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
             app:layout_constraintRight_toLeftOf="@+id/five_elem"
             app:layout_constraintTop_toBottomOf="@+id/one_elem" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/five_elem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
             app:layout_constraintRight_toLeftOf="@+id/six_elem"
             app:layout_constraintTop_toBottomOf="@+id/two_elem" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/six_elem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -82,7 +82,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/three_elem" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/seven_elem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -91,7 +91,7 @@
             app:layout_constraintRight_toLeftOf="@+id/eight_elem"
             app:layout_constraintTop_toBottomOf="@+id/four_elem" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/eight_elem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -100,7 +100,7 @@
             app:layout_constraintRight_toLeftOf="@+id/nine_elem"
             app:layout_constraintTop_toBottomOf="@+id/five_elem" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/nine_elem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -118,7 +118,7 @@
         android:visibility="gone"
         tools:visibility="visible">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/secret"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
