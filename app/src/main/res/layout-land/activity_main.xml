@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:text="@string/name_text"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@+id/btn_toast"
+            app:layout_constraintRight_toLeftOf="@+id/btn_touch_down"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatEditText
@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:text="@string/screen_text"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@+id/btn_toast"
+            app:layout_constraintRight_toLeftOf="@+id/btn_touch_down"
             app:layout_constraintTop_toBottomOf="@+id/name" />
 
         <com.google.android.material.button.MaterialButton
@@ -34,6 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/btn_toast"
+            app:layout_constraintLeft_toLeftOf="@id/btn_touch_down"
             app:layout_constraintRight_toLeftOf="@+id/btn_snackbar"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,6 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/btn_snackbar"
+            app:layout_constraintLeft_toRightOf="@id/btn_toast"
             app:layout_constraintRight_toLeftOf="@+id/btn_dialog"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -52,26 +54,25 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/btn_dialog"
+            app:layout_constraintLeft_toRightOf="@id/btn_snackbar"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/four_elem"
+            android:id="@+id/btn_touch_down"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/four_text"
-            app:layout_constraintLeft_toLeftOf="@+id/btn_toast"
-            app:layout_constraintRight_toLeftOf="@+id/five_elem"
+            android:text="@string/btn_touch_down"
+            app:layout_constraintRight_toLeftOf="@+id/btn_touch_up"
             app:layout_constraintTop_toBottomOf="@+id/btn_toast" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/five_elem"
+            android:id="@+id/btn_touch_up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/five_text"
-            app:layout_constraintLeft_toRightOf="@+id/four_elem"
+            android:text="@string/btn_touch_up"
             app:layout_constraintRight_toLeftOf="@+id/six_elem"
             app:layout_constraintTop_toBottomOf="@+id/btn_snackbar" />
 
@@ -81,7 +82,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/six_text"
-            app:layout_constraintLeft_toRightOf="@+id/five_elem"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_dialog" />
 
@@ -91,9 +91,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/seven_text"
-            app:layout_constraintLeft_toLeftOf="@+id/btn_toast"
+            app:layout_constraintLeft_toLeftOf="@+id/btn_touch_down"
             app:layout_constraintRight_toLeftOf="@+id/eight_elem"
-            app:layout_constraintTop_toBottomOf="@+id/four_elem" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_touch_down" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/eight_elem"
@@ -103,7 +103,7 @@
             android:text="@string/eight_text"
             app:layout_constraintLeft_toRightOf="@+id/seven_elem"
             app:layout_constraintRight_toLeftOf="@+id/nine_elem"
-            app:layout_constraintTop_toBottomOf="@+id/five_elem" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_touch_up" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/nine_elem"

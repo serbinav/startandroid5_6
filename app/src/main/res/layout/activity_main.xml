@@ -54,18 +54,18 @@
             <TableRow>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/four_elem"
+                    android:id="@+id/btn_touch_down"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/four_text" />
+                    android:text="@string/btn_touch_down" />
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/five_elem"
+                    android:id="@+id/btn_touch_up"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/five_text" />
+                    android:text="@string/btn_touch_up" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/six_elem"

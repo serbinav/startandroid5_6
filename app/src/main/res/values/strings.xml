@@ -5,8 +5,8 @@
     <string name="btn_toast">Toast</string>
     <string name="btn_snackbar">Snackbar</string>
     <string name="btn_dialog">Dialog</string>
-    <string name="four_text">4</string>
-    <string name="five_text">5</string>
+    <string name="btn_touch_down">Touch Down</string>
+    <string name="btn_touch_up">Touch Up</string>
     <string name="six_text">6</string>
     <string name="seven_text">7</string>
     <string name="eight_text">8</string>
@@ -17,4 +17,6 @@
     <string name="dialog_title">Dialog</string>
     <string name="dialog_message">А это вот AlertDialog</string>
     <string name="dialog_btn">OK</string>
+    <string name="btn_touch_down_text">А ну уйди!</string>
+    <string name="btn_touch_up_text">Куда ушел вернись!</string>
 </resources>

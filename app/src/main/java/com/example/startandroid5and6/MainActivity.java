@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatEditText;
 
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.Toast;
@@ -52,5 +53,28 @@ public class MainActivity extends AppCompatActivity {
         dialogButton.setOnClickListener(v ->
                 builder.show()
         );
+
+        MaterialButton touchDownButton = findViewById(R.id.btn_touch_down);
+        touchDownButton.setOnTouchListener((v, event) -> {
+            if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                Toast.makeText(getApplicationContext(),
+                        R.string.btn_touch_down_text,
+                        Toast.LENGTH_SHORT).show();
+                v.performClick();
+                return true;
+            }
+            return false;
+        });
+
+        MaterialButton touchUpButton = findViewById(R.id.btn_touch_up);
+        touchUpButton.setOnTouchListener((v, event) -> {
+            if (event.getAction() == MotionEvent.ACTION_UP) {
+                Toast.makeText(getApplicationContext(),
+                        R.string.btn_touch_up_text,
+                        Toast.LENGTH_SHORT).show();
+                v.performClick();
+            }
+            return false;
+        });
     }
 }
