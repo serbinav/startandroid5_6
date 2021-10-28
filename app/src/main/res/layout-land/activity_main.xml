@@ -126,9 +126,8 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/secret"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            style="@style/button_style"
+            android:layout_gravity="center|left"
             android:text="@string/secret"
             android:visibility="visible" />
     </FrameLayout>
