@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="button_style" parent="@style/Widget.MaterialComponents.Button.TextButton">
+        <item name="android:layout_width">@dimen/button_width</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="strokeColor">@color/teal_200</item>
+        <item name="strokeWidth">@dimen/stroke</item>
+    </style>
+
+</resources>

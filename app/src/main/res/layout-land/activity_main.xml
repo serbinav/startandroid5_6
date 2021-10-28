@@ -10,102 +10,108 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/name_text"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@+id/one_elem"
+            app:layout_constraintRight_toLeftOf="@+id/btn_touch_down"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/screen"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/screen_text"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@+id/four_elem"
+            app:layout_constraintRight_toLeftOf="@+id/btn_touch_down"
             app:layout_constraintTop_toBottomOf="@+id/name" />
 
-        <Button
-            android:id="@+id/one_elem"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_toast"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/one_text"
-            app:layout_constraintRight_toLeftOf="@+id/two_elem"
+            android:text="@string/btn_toast"
+            app:layout_constraintLeft_toLeftOf="@id/btn_touch_down"
+            app:layout_constraintRight_toLeftOf="@+id/btn_snackbar"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/two_elem"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_snackbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/two_text"
-            app:layout_constraintRight_toLeftOf="@+id/three_elem"
+            android:text="@string/btn_snackbar"
+            app:layout_constraintLeft_toRightOf="@id/btn_toast"
+            app:layout_constraintRight_toLeftOf="@+id/btn_dialog"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/three_elem"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_dialog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/three_text"
+            android:text="@string/btn_dialog"
+            app:layout_constraintLeft_toRightOf="@id/btn_snackbar"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/four_elem"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_touch_down"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/four_text"
-            app:layout_constraintRight_toLeftOf="@+id/five_elem"
-            app:layout_constraintTop_toBottomOf="@+id/one_elem" />
+            android:text="@string/btn_touch_down"
+            app:layout_constraintRight_toLeftOf="@+id/btn_touch_up"
+            app:layout_constraintTop_toBottomOf="@+id/btn_toast" />
 
-        <Button
-            android:id="@+id/five_elem"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_touch_up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/five_text"
+            android:text="@string/btn_touch_up"
             app:layout_constraintRight_toLeftOf="@+id/six_elem"
-            app:layout_constraintTop_toBottomOf="@+id/two_elem" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_snackbar" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/six_elem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/six_text"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/three_elem" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_dialog" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/seven_elem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/seven_text"
+            app:layout_constraintLeft_toLeftOf="@+id/btn_touch_down"
             app:layout_constraintRight_toLeftOf="@+id/eight_elem"
-            app:layout_constraintTop_toBottomOf="@+id/four_elem" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_touch_down" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/eight_elem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/eight_text"
+            app:layout_constraintLeft_toRightOf="@+id/seven_elem"
             app:layout_constraintRight_toLeftOf="@+id/nine_elem"
-            app:layout_constraintTop_toBottomOf="@+id/five_elem" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_touch_up" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/nine_elem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/nine_text"
+            app:layout_constraintLeft_toRightOf="@+id/eight_elem"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/six_elem" />
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -118,11 +124,10 @@
         android:visibility="gone"
         tools:visibility="visible">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/secret"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            style="@style/button_style"
+            android:layout_gravity="center|left"
             android:text="@string/secret"
             android:visibility="visible" />
     </FrameLayout>

@@ -10,13 +10,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/name_text" />
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/screen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,45 +29,45 @@
 
             <TableRow>
 
-                <Button
-                    android:id="@+id/one_elem"
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_toast"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/one_text" />
+                    android:text="@string/btn_toast" />
 
-                <Button
-                    android:id="@+id/two_elem"
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_snackbar"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/two_text" />
+                    android:text="@string/btn_snackbar" />
 
-                <Button
-                    android:id="@+id/three_elem"
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_dialog"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/three_text" />
+                    android:text="@string/btn_dialog" />
             </TableRow>
 
             <TableRow>
 
-                <Button
-                    android:id="@+id/four_elem"
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_touch_down"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/four_text" />
+                    android:text="@string/btn_touch_down" />
 
-                <Button
-                    android:id="@+id/five_elem"
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_touch_up"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/five_text" />
+                    android:text="@string/btn_touch_up" />
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/six_elem"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -77,21 +77,21 @@
 
             <TableRow>
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/seven_elem"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="@string/seven_text" />
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/eight_elem"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="@string/eight_text" />
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/nine_elem"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -109,11 +109,10 @@
         android:visibility="gone"
         tools:visibility="visible">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/secret"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            style="@style/button_style"
+            android:layout_gravity="center|right"
             android:text="@string/secret"
             android:visibility="visible" />
     </FrameLayout>
